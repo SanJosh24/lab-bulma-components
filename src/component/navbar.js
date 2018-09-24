@@ -1,9 +1,10 @@
 // User.js
-import React from 'react';
-import CoolButton from './component/CoolButton'
+import React, { Component } from 'react';
+import CoolButton from './CoolButton'
 
-const navbar = () => {
-	return (
+class Navbar extends Component {
+	render () {
+		return (
 		<div>
 			<nav class="navbar is-transparent">
 				<div class="navbar-brand">
@@ -65,24 +66,10 @@ const navbar = () => {
 						<div class="navbar-item">
 							<div class="field is-grouped">
 								<p class="control">
-									{/* <a
-										class="button is-rounded my-class is-danger is-small"
-										data-social-network="Twitter"
-										data-social-action="tweet"
-										data-social-target="http://localhost:4000"
-										target="_blank"
-										href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms"
-									>
-										<span>Login</span>
-									</a> */}
+								<CoolButton/>
 								</p>
 								<p class="control">
-									<a
-										class="button is-small is-success"
-										href="https://github.com/jgthms/bulma/releases/download/0.7.1/bulma-0.7.1.zip"
-									>
-										<span>Signup</span>
-									</a>
+
 								</p>
 							</div>
 						</div>
@@ -90,7 +77,8 @@ const navbar = () => {
 				</div>
 			</nav>
 		</div>
-	);
+		)
+	}
 };
 
-export default navbar;
+export default Navbar;
