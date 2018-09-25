@@ -66,10 +66,10 @@ class Navbar extends Component {
 						<div class="navbar-item">
 							<div class="field is-grouped">
 								<p class="control">
-								<CoolButton/>
+								<CoolButton text="login"/>
 								</p>
 								<p class="control">
-
+								<CoolButton text="signup"/>
 								</p>
 							</div>
 						</div>
